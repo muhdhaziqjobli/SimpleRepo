@@ -32,6 +32,7 @@ class PhoneCrud extends Component
 		$phones = Phone::where('brand', 'like', '%'.$this->search.'%')
 					->orWhere('model', 'like', '%'.$this->search.'%')
 					->orderBy('brand')
+					->orderBy('year')
 					->paginate(3);
 
 		$data = [
