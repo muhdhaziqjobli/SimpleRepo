@@ -4,7 +4,6 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Phone;
-use DB;
 
 class PhoneCrud extends Component
 {
